@@ -15,7 +15,7 @@ exports.createCategory = async (req, res)=> {
 
         const categoryItem = await category.save()
 
-        res.setHeader("application/json")
+        res.setHeader("Content-Type","application/json");
         res.json(categoryItem)
     } catch (error) {
         res.json({message: error.message})
