@@ -74,7 +74,7 @@ exports.initiatePayment = async (req, res) => {
         tx_ref: orderId,
         amount,
         currency,
-        redirect_url: "http://localhost:5173/thanks",
+        redirect_url: "https://tehnotronix-frontend.vercel.app/thanks",
         customer: {
           email: user.email,
           name: `${user.firstName} ${user.lastName}`,
